@@ -1,6 +1,6 @@
 @mixin y-padding($padding) {
-	padding-top: $padding;
 	padding-bottom: $padding;
+	padding-top: $padding;
 }
 
 @mixin x-padding($padding) {

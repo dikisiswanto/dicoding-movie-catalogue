@@ -1,25 +1,25 @@
 .app-bar {
 	@include y-padding($spacing--sm);
 	@include x-padding($spacing--base);
-	display: grid;
-	grid-template-columns: auto 1fr auto;
 	align-items: center;
+	background-color: $color--white;
+	box-shadow: 0 2px 4px 0 rgba($color--black, .2);
+	display: grid;
 	gap: $spacing--base;
+	grid-template-columns: auto 1fr auto;
 	position: sticky;
 	top: 0;
 	z-index: 50;
-	box-shadow: 0 2px 4px 0 rgba($color--black, .2);
-	background-color: $color--white;
 
 	@media (min-width: $screen--md) {
-		grid-template-columns: 1fr auto;
 		@include y-padding($spacing--sm);
 		@include x-padding($spacing--xl);
+		grid-template-columns: 1fr auto;
 	}
 
 	&__menu {
-		display: flex;
 		align-items: center;
+		display: flex;
 
 		@media (min-width: $screen--md) {
 			display: none;
@@ -29,7 +29,7 @@
 			@include y-padding($spacing--sm);
 			@include x-padding($spacing--sm);
 			background-color: transparent;
-			border: none;
+			border: 0;
 			cursor: pointer;
 		}
 	}
@@ -49,19 +49,19 @@
 	}
 
 	&__navigation {
+		background-color: $color--white;
+		box-shadow: 0 0 4px rgba($color--black, .2);
+		left: -80vw;
+		overflow: hidden;
+		padding: $spacing--sm;
 		position: absolute;
 		top: 3.5rem;
-		left: -80vw;
 		transition: all .3s;
-		padding: $spacing--sm;
-		background-color: $color--white;
-		overflow: hidden;
-		box-shadow:  0px 0px 4px rgba($color--black, .2);
 
 		@media (min-width: $screen--md) {
+			box-shadow: none;
 			position: static;
 			width: 100%;
-			box-shadow: none;
 		}
 
 		&.open {
@@ -76,16 +76,16 @@
 				}
 
 				a {
+					color: $color--black;
 					display: inline-block;
+					margin-bottom: $spacing--xs;
+					padding: $spacing--sm;
 					text-decoration: none;
 					width: 100%;
-					color: $color--black;
-					padding: $spacing--sm;
-					margin-bottom: $spacing--xs;
 
 					@media (min-width: $screen--md) {
-						width: auto;
 						margin-bottom: 0;
+						width: auto;
 					}
 				}
 			}

@@ -21,6 +21,8 @@
     "node-sass": "^4.14.1",
     "sass-loader": "^10.0.2",
     "style-loader": "^1.2.1",
+    "stylelint": "^13.7.0",
+    "stylelint-config-sass-guidelines": "^7.1.0",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0",
@@ -30,7 +32,8 @@
     "start-dev": "webpack-dev-server --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
     "lint:check": "eslint ./src/**/*.js",
-    "lint:fix": "eslint ./src/**/*.js --fix"
+    "lint:fix": "eslint ./src/**/*.js --fix",
+    "stylelint": "stylelint ./src/**/*.scss"
   },
   "keywords": [],
   "author": "",

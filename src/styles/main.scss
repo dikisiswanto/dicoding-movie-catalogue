@@ -7,10 +7,10 @@
 @import './components/footer';
 
 body {
-	font-family: 'Poppins', sans-serif;
 	background-color: $color--white;
-	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
+	font-family: 'Poppins', sans-serif;
+	min-height: 100vh;
 }
 
