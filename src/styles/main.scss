@@ -1,0 +1,16 @@
+@import './utilities/variables';
+@import './utilities/reset';
+@import './utilities/mixins';
+@import './components/app-bar';
+@import './components/main-content';
+@import './components/movie';
+@import './components/footer';
+
+body {
+	font-family: 'Poppins', sans-serif;
+	background-color: $color--white;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+

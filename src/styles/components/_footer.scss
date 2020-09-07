@@ -1,0 +1,13 @@
+footer {
+	padding: $spacing--base;
+
+	p {
+		text-align: center;
+		color: #aaaaaa;
+
+		a {
+			color: $color--primary;
+			text-decoration: none;
+		}
+	}
+}

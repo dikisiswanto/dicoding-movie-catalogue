@@ -1,0 +1,94 @@
+.app-bar {
+	@include y-padding($spacing--sm);
+	@include x-padding($spacing--base);
+	display: grid;
+	grid-template-columns: auto 1fr auto;
+	align-items: center;
+	gap: $spacing--base;
+	position: sticky;
+	top: 0;
+	z-index: 50;
+	box-shadow: 0 2px 4px 0 rgba($color--black, .2);
+	background-color: $color--white;
+
+	@media (min-width: $screen--md) {
+		grid-template-columns: 1fr auto;
+		@include y-padding($spacing--sm);
+		@include x-padding($spacing--xl);
+	}
+
+	&__menu {
+		display: flex;
+		align-items: center;
+
+		@media (min-width: $screen--md) {
+			display: none;
+		}
+
+		button {
+			@include y-padding($spacing--sm);
+			@include x-padding($spacing--sm);
+			background-color: transparent;
+			border: none;
+			cursor: pointer;
+		}
+	}
+
+	&__brand {
+		@include y-padding($spacing--sm);
+		color: $color--primary;
+		font-size: $font-size--lg;
+		text-transform: uppercase;
+		user-select: none;
+
+		h1 {
+			@media (min-width: $screen--md) {
+				font-size: $font-size--2xl;
+			}
+		}
+	}
+
+	&__navigation {
+		position: absolute;
+		top: 3.5rem;
+		left: -80vw;
+		transition: all .3s;
+		padding: $spacing--sm;
+		background-color: $color--white;
+		overflow: hidden;
+		box-shadow:  0px 0px 4px rgba($color--black, .2);
+
+		@media (min-width: $screen--md) {
+			position: static;
+			width: 100%;
+			box-shadow: none;
+		}
+
+		&.open {
+			left: 0;
+		}
+
+		ul {
+			li {
+
+				@media (min-width: $screen--md) {
+					display: inline-block;
+				}
+
+				a {
+					display: inline-block;
+					text-decoration: none;
+					width: 100%;
+					color: $color--black;
+					padding: $spacing--sm;
+					margin-bottom: $spacing--xs;
+
+					@media (min-width: $screen--md) {
+						width: auto;
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+	}
+}
