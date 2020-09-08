@@ -1,0 +1,2 @@
+# dicoding-movie-catalogue
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/b54050ec46d741f9bd7f3fc56ed22429)](https://app.codacy.com/manual/dikisiswanto/dicoding-movie-catalogue?utm_source=github.com&utm_medium=referral&utm_content=dikisiswanto/dicoding-movie-catalogue&utm_campaign=Badge_Grade_Dashboard)
