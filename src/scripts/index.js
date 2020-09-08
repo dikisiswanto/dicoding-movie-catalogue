@@ -2,6 +2,7 @@ import 'regenerator-runtime';
 import 'normalize.css';
 import '../styles/main.scss';
 import App from './views/app';
+import swRegister from './utils/sw-register';
 
 const feather = require('feather-icons');
 
@@ -18,4 +19,5 @@ window.addEventListener('hashchange', () => {
 window.addEventListener('load', () => {
 	app.renderPage();
 	feather.replace();
+	swRegister();
 });

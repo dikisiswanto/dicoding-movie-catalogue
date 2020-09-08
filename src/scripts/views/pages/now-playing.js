@@ -17,7 +17,7 @@ const NowPlaying = {
 		const movies = await TheMovieDbSource.nowPlayingMovies();
 		const moviesContainer = document.querySelector('#movies');
 		movies.forEach((movie) => {
-			moviesContainer.innerHTML = createMovieItemTemplate(movie);
+			moviesContainer.innerHTML += createMovieItemTemplate(movie);
 		});
 	},
 };
