@@ -1,0 +1,32 @@
+.like {
+	align-items: center;
+	background-color: $color--primary;
+	border: 0;
+	border-radius: 50%;
+	bottom: $spacing--base;
+	box-shadow: 0 0 8px 1px rgba($color--black, .3);
+	cursor: pointer;
+	display: flex;
+	height: 55px;
+	justify-content: center;
+	overflow: hidden;
+	position: fixed;
+	right: $spacing--base;
+	width: 55px;
+
+	&__icon {
+		fill: none;
+		height: 1.5rem;
+		stroke: $color--white;
+		width: 1.5rem;
+
+		&.filled {
+			fill: $color--white;
+		}
+	}
+
+	&:active,
+	&:focus {
+		outline: none;
+	}
+}
